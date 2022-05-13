@@ -16,15 +16,23 @@ body {
     margin: 0;
     font-size: 15px;
     font-family: 'Outfit', sans-serif;
+    font-weight: 400;
     color: var(--clr-grayish-blue);
     background-color: var(--clr-light-gray);
 }
 
 main {
+    height: 100vh;
+    display: grid;
+    grid-auto-rows: max-content;
+    place-content: center;
+}
+
+section {
     background-color: var(--clr-white);
-    margin: 5rem 1.5rem;
     border-radius: 1rem;
     padding: 1rem;
+    max-width: 320px;
 }
 
 h1, p {
@@ -40,8 +48,7 @@ h1 {
 
 p {
     line-height: 1.5;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-inline: 1rem;
 }
 
 .qr-code-image {
@@ -49,12 +56,6 @@ p {
     background-image: url(../images/image-qr-code.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 300px;
+    min-height: 290px;
     border-radius: 1rem;
-}
-
-footer {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align: center;
 }
